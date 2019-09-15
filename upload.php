@@ -12,7 +12,7 @@ $name=$_FILES['file']['name'];
 $type=pathinfo($name,PATHINFO_EXTENSION);
 $token=$_POST['token'];
 $iduser=trim(file_get_contents("$server/check.php?token=$token"));
-if($_POST['submit']){
+if($_POST){
 if(!$iduser){
 header("Location: $server/upload.php");
 }elseif(!$name){
